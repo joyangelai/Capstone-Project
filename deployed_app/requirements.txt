@@ -5,4 +5,4 @@ xgboost
 scikit-learn
 matplotlib
 
-You can download the necessary using pip install either on your machine or on python virtual environment
+
