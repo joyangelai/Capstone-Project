@@ -1,16 +1,29 @@
 import streamlit as st
 import numpy as np
 import pickle
+import os
+
+# loading files
+def load_model(filename):
+    path = os.path.join(os.path.dirname(__file__), "data", filename)
+    with open(path, "rb") as f:
+        return pickle.load(f)
+
+scaler = load_model("scaler.pkl")
+rf_model = load_model("rfmodel.pkl")
+xgb_model = load_model("xgmodel.pkl")
+log_model = load_model("lgmodel.pkl")
+
 
 # load scaler used
-with open('data/scaler.pkl', 'rb') as f:
-    scaler = pickle.load(f)
+#with open('data/scaler.pkl', 'rb') as f:
+    #scaler = pickle.load(f)
 
 # load models
 models = {
-    'Logistic Regression': pickle.load(open('data/lgmodel.pkl', 'rb')),
-    'Random Forest': pickle.load(open('data/rfmodel.pkl', 'rb')),
-    'XGBoost': pickle.load(open('data/xgmodel.pkl', 'rb'))
+    'Logistic Regression': log_model,
+    'Random Forest': rf_model,
+    'XGBoost': xgb_model
     }
 # Set threshold
 THRESHOLD = 0.8
