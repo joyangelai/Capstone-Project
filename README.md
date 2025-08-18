@@ -24,7 +24,7 @@ This repository contains the core components of the project focused on predictin
 
 ## 🔗 Deployment
 
-A live version of the project is available [here](#https://capstone-project-devwgdzryidblpa5te82j5.streamlit.app/). 
+A live version of the project is available [here](https://capstone-project-devwgdzryidblpa5te82j5.streamlit.app/). 
 
 ## 📌 Additional Notes
 
