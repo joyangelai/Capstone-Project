@@ -5,9 +5,11 @@ import os
 
 # loading files
 def load_model(filename):
-    path = os.path.join(os.path.dirname(__file__), "data", filename)
+    base_dir = os.path.abspath(os.path.dirname(__file__))
+    path = os.path.join(base_dir, "data", filename)
     with open(path, "rb") as f:
         return pickle.load(f)
+
 
 scaler = load_model("scaler.pkl")
 rf_model = load_model("rfmodel.pkl")
