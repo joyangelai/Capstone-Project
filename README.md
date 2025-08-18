@@ -1,6 +1,6 @@
 # 📈 Data Science Project: LendingClub Loan Defaulters Prediction
 
-This repository contains the core components of the project focused on [predicting loan defaulters using historical lending data].
+This repository contains the core components of the project focused on predicting loan defaulters using historical lending data.
 
 ## 📂 Repository Contents
 
@@ -13,7 +13,7 @@ This repository contains the core components of the project focused on [predicti
 
 - Python (Pandas, NumPy, Scikit-learn, Seaborn)
 - Google Colab Notebook
-- [Streamlit]
+- Streamlit
   
 
 ## ✅ Project Highlights
