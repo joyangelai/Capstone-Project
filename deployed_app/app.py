@@ -3,7 +3,7 @@ import numpy as np
 import pickle
 
 # load scaler used
-with open('/data/scaler.pkl', 'rb') as f:
+with open('data/scaler.pkl', 'rb') as f:
     scaler = pickle.load(f)
 
 # load models
