@@ -3,14 +3,14 @@ import numpy as np
 import pickle
 
 # load scaler used
-with open('scaler.pkl', 'rb') as f:
+with open('/data/scaler.pkl', 'rb') as f:
     scaler = pickle.load(f)
 
 # load models
 models = {
-    'Logistic Regression': pickle.load(open('lgmodel.pkl', 'rb')),
-    'Random Forest': pickle.load(open('rfmodel.pkl', 'rb')),
-    'XGBoost': pickle.load(open('xgmodel.pkl', 'rb'))
+    'Logistic Regression': pickle.load(open('data/lgmodel.pkl', 'rb')),
+    'Random Forest': pickle.load(open('data/rfmodel.pkl', 'rb')),
+    'XGBoost': pickle.load(open('data/xgmodel.pkl', 'rb'))
     }
 # Set threshold
 THRESHOLD = 0.8
