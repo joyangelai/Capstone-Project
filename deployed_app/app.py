@@ -7,11 +7,6 @@ import os
 def load_model(filename):
     base_dir = os.path.abspath(os.path.dirname(__file__))
     path = os.path.join(base_dir, "data", filename)
-
-    if not os.path.exists(path):
-        st.error(f" File not found: {path}")
-        return None
-    
     
     with open(path, "rb") as f:
         return pickle.load(f)
